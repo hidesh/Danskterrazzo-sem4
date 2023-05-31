@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.drop-shadow-img{
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
 .carousel {
     position: relative;
     overflow: hidden;
