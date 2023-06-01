@@ -9,8 +9,27 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!--Carousel - https://swiperjs.com/swiper-api#parallax-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+  <!--Inner styling for swiper-->
+  <style>
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .swiper-slide img {
+      max-width: 75%;
+      max-height:50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
   <!--Header-->
   <header class="flex justify-between bg-dtBlue max-md:py-3 py-5 px-3 border-b border-dtOrange">
       <img src="../img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
@@ -41,61 +60,61 @@
           </button>
   </header>
 <!--Responsive nav-->
-  <nav>
-    <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
-      <ul class="flex flex-row max-sm:flex-col">
-        <li class="items-center flex max-sm:justify-center">
-          <a href="index.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Forside</a>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="terrazzogulve.html" class="text-dtOrange text-lg max-sm:text-2xl max-sm:my-3 mx-3 underline underline-offset-4 decoration-dtOrange decoration-4" >
-            Terrazzogulve
-          </a>
-        </li>
-        <li class="flex items-center justify-center gap-0">
-          <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Vi tilbyder</a>
-          <button onclick="toggledropdownMenu()" id="dropdownButton">
-            <img src="../img/icons/arrow.svg" alt="arrow down icon" >
-          </button>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="om-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Om os</a>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="kontakt-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Kontakt os</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
-        <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
-          <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
-          <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
+<nav>
+  <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
+    <ul class="flex flex-row max-sm:flex-col">
+      <li class="items-center flex max-sm:justify-center">
+        <a href="index.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Forside</a>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="terrazzogulve.html" class="text-dtOrange text-lg max-sm:text-2xl max-sm:my-3 mx-3 underline underline-offset-4 decoration-dtOrange decoration-4" >
+          Terrazzogulve
+        </a>
+      </li>
+      <li class="flex items-center justify-center gap-0">
+        <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Vi tilbyder</a>
+        <button onclick="toggledropdownMenu()" id="dropdownButton">
+          <img src="../img/icons/arrow.svg" alt="arrow down icon" >
         </button>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/reparation-af-terrazzogulv.html" class="text-white text-xs max-sm:text-lg text-center max-md hover:text-dtOrange max-md:leading-tight">Reparation af terrazzogulv</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/slibning-af-terrazzogulve-og-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Slibning af terrazzogulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/rengøring-af-vinyl-og-linoleumsgulv.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rengøring af linoleum og vinylgulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/skridsikring-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Skridsikring af gulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/afkalkning-af-badeværelse.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Afkalkning af badeværelse</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/rensning-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rensning af stengulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/bordplader.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Bordplader</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="om-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Om os</a>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="kontakt-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Kontakt os</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
+      <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
+        <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
+        <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
+      </button>
+      <li class="justify-center flex items-center py-2">
+        <a href="reparation-af-terrazzogulv.html" class="text-white text-xs max-sm:text-lg text-center max-md hover:text-dtOrange max-md:leading-tight">Reparation af terrazzogulv</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="slibning-af-terrazzogulve-og-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Slibning af terrazzogulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="rengøring-af-vinyl-og-linoleumsgulv.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rengøring af linoleum og vinylgulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="skridsikring-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Skridsikring af gulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="afkalkning-af-badeværelse.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Afkalkning af badeværelse</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="rensning-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rensning af stengulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="bordplader.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Bordplader</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     
   <main class="relative">
     <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] h-full" src="../img/Background_img.png" alt="Dansk terrazzo background">
@@ -119,15 +138,15 @@
 
    
       <section id="Terrazzogulve-info">
-        <div class="m-12 flex flex-row max-sm:flex-col gap-5 md:gap-9 lg:gap-32">
-            <img src="/img/terrazzogulve.png" alt="terrazzogulv" class="drop-shadow-img max-sm:w-full max-lg:w-1/2"/>
+        <div class="m-12 flex flex-row max-md:flex-col gap-5 md:gap-9 lg:gap-32">
+            <img src="/img/terrazzogulve.png" alt="terrazzogulv" class="drop-shadow-img max-sm:w-full max-lg:w-1/2 mx-auto"/>
             <div class="mr-28 max-sm:mr-0">
-                <h2 class="max-sm:text-3xl max-lg:text-3xl text-5xl max-md:text-xl font-semibold lg:mr-48 pb-6 max-md:pb-3">Klarer det hele inden for terrazzogulve</h2>
+                <h2 class="max-lg:text-3xl text-5xl font-semibold lg:mr-48 pb-6 max-md:pb-3">Klarer det hele inden for terrazzogulve</h2>
                 <p class="pb-10 max-md:pb-2 max-md:text-xs">
                     Om det er et nyt gulv til køkkenet, badeværelset, indgangspartiet, toiletrummet eller noget helt andet, står vi gerne til rådighed.<br>
                     Vi er med under hele processen og klarer alle faser af gulvlægningen. Dansk Terrazzo vægter den personlige kontakt højt og sørger for en grundig dialog fra start til slut.
                 </p>
-                <h2 class="max-sm:text-3xl max-lg:text-3xl text-5xl max-md:text-xl font-semibold mr-24 pb-6 max-md:pb-3" >
+                <h2 class="max-lg:text-3xl text-5xl font-semibold mr-24 pb-6 max-md:pb-3" >
                     Tilbyder specialdesignede terrazzogulve
                 </h2>
                 <p class="pb-10 max-md:pb-2 max-md:text-xs">
@@ -149,14 +168,52 @@
         </div>
     </section>
 
-
-    <section id="forside-om-os" class="w-full bg-dtLightGray my-10 drop-shadow-2xl">
-     
-    </section>
-
-    <section id="forside-anmendelser" class="w-full my-10 drop-shadow-2xl hidden">
-      
-      
+    <section id="galleri-terrazzogulv" class="w-full bg-dtBlue drop-shadow-2xl pt-14 pb-14 border-b border-dtOrange hidden">
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="../img/terrazzo-gulv-img/floor-1.png" alt="">
+              <h4 class="text-center text-2xl text-white py-4">Terrazzogulve hos Dansk Terrazzo</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="../img/terrazzo-gulv-img/rep1.png" alt="">
+              <h4 class="text-center text-2xl text-white py-4">Reparation af terrazzogulv</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="../img/terrazzo-gulv-img/rep2.png" alt="">
+              <h4 class="text-center text-2xl text-white py-4">Repareret gulv</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="../img/terrazzo-gulv-img/bad.png" alt="">
+              <h4 class="text-center text-2xl text-white py-4">Terrazzo til bad</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col">
+              <img src="../img/terrazzo-gulv-img/terrazzogulv2.png" alt="">
+              <h4 class="text-center text-2xl text-white py-4">Terrazzogulv</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- navigation buttons -->
+        <div id="prev-terrazzo" class="swiper-button-prev"></div>
+        <div id="next-terrazzo" class="swiper-button-next"></div>
+      </div>
     </section>
 
     <!--Footer-->
@@ -212,67 +269,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
-<!--
-    <section id="terrazzogulv-produkter" class="bg-dtBlue py-7 border-y border-dtOrange hidden">
-        <div class="carousel-container">
-            <div class="carousel-wrapper flex">
-                <div class="carousel-item flex-none w-full sm:w-1/3">
-                    <div class="flex flex-col items-center">
-                        <img src="/img/image_9.png">
-                        <p>
-                            Terrazzogulve hos Dansk Terrazzo
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. 
-                        </p>
-                    </div>
-                  </div>
-                
-                  <div class="carousel-item flex-none w-full sm:w-1/3">
-                    <div class="flex flex-col items-center">
-                        <img src="/img/image_9.png">
-                        <p>
-                            Terrazzogulve hos Dansk Terrazzo
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. 
-                        </p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item flex-none w-full sm:w-1/3">
-                    <div class="flex flex-col items-center">
-                        <img src="/img/image_9.png">
-                        <p>
-                            Terrazzogulve hos Dansk Terrazzo
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. 
-                        </p>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item flex-none w-full sm:w-1/3">
-                    <div class="flex flex-col items-center">
-                        <img src="/img/image_9.png">
-                        <p>
-                            Terrazzogulve hos Dansk Terrazzo
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. 
-                        </p>
-                    </div>
-                  </div>
-
-              
-      
-            </div>
-          </div>
-          
-          <button class="carousel-prev absolute top-1/2 transform -translate-y-1/2 left-4 bg-gray-800 text-white p-2 rounded-full">Prev</button>
-          <button class="carousel-next absolute top-1/2 transform -translate-y-1/2 right-4 bg-gray-800 text-white p-2 rounded-full">Next</button>
-          
-          <div class="carousel-dotty flex justify-center mt-2"></div>          
-    </section>
--->

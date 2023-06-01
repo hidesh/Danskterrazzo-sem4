@@ -41,72 +41,70 @@
           </button>
   </header>
 <!--Responsive nav-->
-  <nav>
-    <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
-      <ul class="flex flex-row max-sm:flex-col">
-        <li class="items-center flex max-sm:justify-center">
-          <a href="index.html" class="text-dtOrange text-lg max-sm:text-2xl max-sm:my-3 mx-3 underline underline-offset-4 decoration-dtOrange decoration-4">Forside</a>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="terrazzogulve.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4" >
-            Terrazzogulve
-          </a>
-        </li>
-        <li class="flex items-center justify-center gap-0">
-          <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Vi tilbyder</a>
-          <button onclick="toggledropdownMenu()" id="dropdownButton">
-            <img src="../img/icons/arrow.svg" alt="arrow down icon" >
-          </button>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="om-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Om os</a>
-        </li>
-        <li class="items-center flex justify-center">
-          <a href="kontakt-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Kontakt os</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
-        <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
-          <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
-          <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
+<nav>
+  <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
+    <ul class="flex flex-row max-sm:flex-col">
+      <li class="items-center flex max-sm:justify-center">
+        <a href="index.html" class="text-dtOrange text-lg max-sm:text-2xl max-sm:my-3 mx-3 underline underline-offset-4 decoration-dtOrange decoration-4">Forside</a>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="terrazzogulve.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4" >
+          Terrazzogulve
+        </a>
+      </li>
+      <li class="flex items-center justify-center gap-0">
+        <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Vi tilbyder</a>
+        <button onclick="toggledropdownMenu()" id="dropdownButton">
+          <img src="../img/icons/arrow.svg" alt="arrow down icon" >
         </button>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/reparation-af-terrazzogulv.html" class="text-white text-xs max-sm:text-lg text-center max-md hover:text-dtOrange max-md:leading-tight">Reparation af terrazzogulv</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/slibning-af-terrazzogulve-og-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Slibning af terrazzogulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/rengøring-af-vinyl-og-linoleumsgulv.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rengøring af linoleum og vinylgulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/skridsikring-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Skridsikring af gulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/afkalkning-af-badeværelse.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Afkalkning af badeværelse</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/rensning-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rensning af stengulve</a>
-        </li>
-        <li class="justify-center flex items-center py-2">
-          <a href="../src/underside/bordplader.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Bordplader</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="om-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Om os</a>
+      </li>
+      <li class="items-center flex justify-center">
+        <a href="kontakt-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Kontakt os</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
+      <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
+        <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
+        <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
+      </button>
+      <li class="justify-center flex items-center py-2">
+        <a href="reparation-af-terrazzogulv.html" class="text-white text-xs max-sm:text-lg text-center max-md hover:text-dtOrange max-md:leading-tight">Reparation af terrazzogulv</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="slibning-af-terrazzogulve-og-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Slibning af terrazzogulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="rengøring-af-vinyl-og-linoleumsgulv.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rengøring af linoleum og vinylgulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="skridsikring-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Skridsikring af gulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="afkalkning-af-badeværelse.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Afkalkning af badeværelse</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="rensning-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rensning af stengulve</a>
+      </li>
+      <li class="justify-center flex items-center py-2">
+        <a href="bordplader.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Bordplader</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     
   <main class="relative">
-    <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] h-full" src="../img/Background_img.png" alt="Dansk terrazzo background">
+    <img class="w-full brightness-75 max-sm:object-cover max-sm:h-[80vh] max-md:h-[50vh] lg:h-full" src="../img/reparation-af-terrazzogulv.png" alt="Dansk terrazzo background">
     <div class="absolute top-1/2 left-0 max-lg:pl-14 pl-28 max-md:pl-14 transform -translate-y-1/2 max-w-2xl max-lg:max-w-sm">
       <div class="flex flex-col w-full max-w-3xl max-md:ml-4 animate__animated animate__backInLeft">
         <h1 class="text-bold text-dtOrange text-6xl max-lg:text-4xl max-md:text-3xl leading-tight max-md:w-4/5">
-          På udkig efter Terrazzo service?
+          Reparation af terrazzogulv
         </h1>
-        <p class="pt-9 max-lg:pt-6 max-md:pt-4 pr-10 pb-4 text-white max-lg:text-base max-md:text-sm text-lg text-left">"Opnå det terrazzogulv, du altid har drømt om, med vores omfattende og professionelle terrazzo-service. 
-          <br>
-          Vores erfarne team står klar til at levere enestående kvalitet og skabe et unikt udtryk til dit rum."</p>
+        <p class="pt-9 max-lg:pt-6 max-md:pt-4 pr-10 pb-4 text-white max-lg:text-base max-md:text-base max-sm:text-lg text-lg text-left">Dansk Terrazzo udfører reparation af terrazzogulv, stengulv og andre typer af gulve efter blandt andet rørgennemføringer samt revner på gulve eller andre former for skader. Vi tilbyder bl.a. også slibning af terrazzogulve.</p>
         <div class="flex flex-row gap-5">
           <button class="bg-dtOrange px-12 py-3 max-md:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform">
             <a href="" class="text-dtBlue max-md:text-base">Kontakt os</a>
@@ -119,230 +117,57 @@
     </div>
   </main>
 
-    <section id="forside-services" class="py-8 hidden">
-      <h1 class="text-center text-6xl py-4">Vores services</h1>
-        <div class="carousel">
-          <div class="carousel-container">
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
+   
+      <section id="Terrazzogulve-info">
+        <div class="m-12 flex flex-row max-md:flex-col gap-5 md:gap-9 lg:gap-16">
+            <img src="../img/rep-image.png" alt="terrazzogulv" class="drop-shadow-img max-sm:w-full max-lg:w-1/2 max-md:mx-auto"/>
+            <div class="mr-28 max-lg:mr-3 max-md:mr-0">
+                <h2 class="max-lg:text-3xl text-4xl font-semibold lg:mr-48 pb-6 max-md:pb-3">Professionel reparation af terrazzogulve af erfarne håndværkere</h2>
+                <p class="pb-10 max-md:pb-2 max-md:text-lg">
+                  Vi tager hånd om din gulvskade med reparation af terrazzogulv og andre gulve og vi har mere end 20 års erfaring med reparationer af terrazzogulve og stengulve.
+                  Med vores store ekspertise inden for gulve og murerarbejde kan vi håndtere enhver form for reparation af terrazzogulve, uanset om det er på badeværelset, trappen, eller noget helt andet. Vi tager hånd om dine udfordringer og sørger for at dit terrazzogulv kommer til at stå som nyt igen.
+                </p>
+                <h2 class="max-lg:text-3xl text-4xl font-semibold mr-24 pb-6 max-md:pb-3" >
+                    Vi reparerer terrazzogulv og stengulv for alle typer kunder
+                </h2>
+                <p class="pb-10 max-md:pb-2 max-md:text-lg">
+                  Reparation af terrazzogulv og stengulv samt flere udføres for såvel private og offentlige instanser som boligselskaber og erhverv.Blandt andet har vi et tæt samarbejde med ingeniører og arkitekter.Vi kommer gerne ud til jeres ejendom og ser på opgaven, så vi bedst muligt kan vurdere, hvilken løsning der vil passe bedst ind.
+                    <br><br>
+                    Kontakt os ved reparation af Terrazzogulv
+                    Du er altid velkommen til at kontakte os, hvis du ønsker at høre mere om, hvad vi kan tilbyde i forbindelse med reparation af terrazzogulv, eller hvis du ønsker et uforpligtende tilbud på reparation af stengulv.
+                </p>
 
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
+                <div class="flex justify-center">
+                    <button class="rounded-3xl bg-dtOrange px-8 py-3">
+                        <a class="" href="index.html">
+                            Kontakt os
+                        </a>
+                    </button>
+                </div>
             </div>
-          
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-
-            #copilot make new divs for more items 
-            <div>
-
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-
-            #copilot make new item row
-            <div>
-              
-          
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-          
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div>
-                <img src="/img/image_gulv.png" alt="terrazzo">
-                <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-                <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>  
-              </div>
-            </div>
-        
-          </div>
-
-          <div class="hidden">
-            <img src="/img/image_gulv.png" alt="terrazzo">
-            <h2 class="text-center text-[32px]">Terrazzogulve</h2>
-            <p class="bg-dtGray text-center text-white py-7 px-5 text-[16px]">Hos Dansk Terrazzo ApS er vi eksperter i terrazzogulve, stengulve og mosaikstifter. Vi har mere end 30 års erfaring med alle former, farver og størrelser på gulve og kan dermed tilbyde professionel rådgivning uanset opgavetype.</p>
-          </div>
-          <button class="carousel-prev">Prev</button>
-          <button class="carousel-next">Next</button>
-          <div class="carousel-dots"></div>
         </div>
-      
     </section>
 
-    <section id="forside-om-os" class="w-full bg-dtLightGray my-10 drop-shadow-2xl">
-      <h1 class="font-semibold max-md:text-5xl max-md:mx-auto text-6xl leading-tight text-center items-center py-6 max-lg:mx-auto mx-60">
-        Et af Danmarks mest erfarne terrazzo virksomhed
-      </h1>
-      <div class="flex flex-row max-md:flex-col">
-        <img src="../img/bil-nobg.png" alt="terrazzo" class="w-1/2 max-md:w-full max-md:items-center">
-        <div class="bg-dtBrown rounded-md m-3 flex items-center">
-          <div class="my-auto max-md:my-8 items-center">
-            <p class="text-center text-white px-20 text-2xl pb-5 max-md:py-3 max-md:text-lg">
-              “Vi er en erfaren og førende virksomhed, med mere end 30 år erfaring, som løser en bred vifte af opgaver, inden for nye og eksisterende gulve samt vægge.”
-            </p>
+    <section id="galleri-terrazzogulv" class="w-full bg-dtBlue drop-shadow-2xl pt-14 pb-14 border-b border-dtOrange">
+          <div class="flex flex-row max-sm:flex-col">
+            <div class="flex flex-col max-sm:pb-5">
+              <img src="../img/terrazzo-gulv-img/floor-1.png" alt="" class="w-3/4 mx-auto">
+              <h4 class="text-center text-2xl text-white py-4">Terrazzogulve hos Dansk Terrazzo</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
 
-            <div class="bg-gray-300 border-2 border-white w-[320px] mx-auto my-5"></div>
+            <div class="flex flex-col max-sm:pb-5">
+              <img src="../img/terrazzo-gulv-img/rep1.png" alt="" class="w-3/4 mx-auto">
+              <h4 class="text-center text-2xl text-white py-4">Reparation af terrazzogulv</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
 
-            <p class="text-center text-white px-20 text-2xl pt-5 max-md:py-3 max-md:text-lg">
-              “Sammen med sine kompetente medarbejdere sørger virksomheden hver dag for kvalitetsløsninger til de mange kunder, som ønsker arbejdet udført af professionelle fagfolk.”
-            </p>
+            <div class="flex flex-col max-sm:pb-5">
+              <img src="../img/terrazzo-gulv-img/rep2.png" alt="" class="w-3/4 mx-auto">
+              <h4 class="text-center text-2xl text-white py-4">Repareret gulv</h4>
+              <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="forside-anmendelser" class="w-full my-10 drop-shadow-2xl hidden">
-      <h1 class="text-center text-6xl py-4">Anmendelser</h1>
-      <p class="text-center items-center mx-72">
-        Vi værdsætter vores kunders feedback! Se vores anmeldelsessektion for at læse, hvad vores glade kunder siger om vores terrazzo-tjenester. Deres ærlige anmeldelser styrker vores engagement i at levere enestående kvalitet og tilfredsstillelse.
-      </p>
-      <div class="flex flex-col justify-center items-center">
-        <img src="../img/trustpilot-logo.svg" alt="trustpilot logo" class="pt-3" />
-        <img src="../img/trustpilot-rating.svg" alt="trustpilot rating" />
-      </div>
-
-      
-      <div class="flex flex-row justify-center pt-5 gap-8">
-        <!--Anmendelse 1-->
-        <div class="flex flex-col items-center justify-center">
-          <div class="p-6 rounded-full bg-dtGray">
-            <p class="text-2xl font-semibold text-white">
-              MO
-            </p>
-          </div>
-
-          <div class="w-96 h-80 bg-dtGray mt-2 rounded-xl p-3">
-            <p class="text-2xl font-semibold text-white text-center">
-              Marianne Olsson
-              <br><br>
-            </p>
-            
-            <p class="text-xl font-semibold text-white uppercase text-center mb-9">
-              Rutineret firma 
-             
-            </p>
-            <p class="text-center text-white mx-3">
-              Jeg fik fin hjælp til istandsættelse af mit terrazzo gulv i badeværelse. Revne skulle bl.a udbedres. 
-              Et godt team med stor erfaring - jeg er meget tilfreds!
-              <br><br>
-              Dato for oplevelse: 17. februar 2023
-            </p>
-          </div>
-        </div>
-
-        <!--Anmendelse 2-->
-        <div class="flex flex-col items-center justify-center">
-          <div class="p-6 rounded-full bg-dtGray">
-            <p class="text-2xl font-semibold text-white">
-              SG
-            </p>
-          </div>
-
-          <div class="w-96 h-80  bg-dtGray mt-2 rounded-xl p-3">
-            <p class="text-2xl font-semibold text-white text-center">
-              Søren Havn Gjedsted
-              <br><br>
-            </p>
-            
-            <p class="text-xl font-semibold text-white uppercase text-center mb-2">
-              Meget tilfredsstillende afkalkning af badeværelse
-
-            </p>
-            <p class="text-center text-white mx-3">
-              Det gik meget stærkt (en uge) fra jeg tog kontakt, til at der var et meget tilfredsstillende og grundigt resultat i forhold til afkalkning af mit badeværelse
-              <br><br>
-              Dato for oplevelse: 05. februar 2023
-            </p>
-          </div>
-        </div>
-
-        <!--Anmendelse 3-->
-        <div class="flex flex-col items-center justify-center">
-          <div class="p-6 rounded-full bg-dtGray">
-            <p class="text-2xl font-semibold text-white">
-              JC
-            </p>
-          </div>
-
-          <div class="w-96 h-80  bg-dtGray mt-2 rounded-xl p-3">
-            <p class="text-2xl font-semibold text-white text-center">
-              Julie Christoffersen
-              <br><br>
-            </p>
-            
-            <p class="text-xl font-semibold text-white uppercase text-center mb-8">
-              Jeg fik slebet mit terrazzo gulv
-     
-            </p>
-            <p class="text-center text-white mx-3">
-              Jeg fik slebet mit terrazzo gulv, jeg er super tilfreds med resultat. KÆMPE ANBEFALNING! Super imødekommende og profesionelle folk :)
-              <br><br>
-              Dato for oplevelse: 25. januar 2023
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex items-center justify-center pt-5">
-        <button class="bg-dtBrown rounded-2xl text-2xl text-white px-5 py-2 hover:scale-110 transition-transform"> 
-          <a href="https://dk.trustpilot.com/review/danskterrazzo.dk" target="_blank">Se alle anmendelser</a>
-        </button>
-      </div>
-      
     </section>
 
     <!--Footer-->
@@ -382,14 +207,14 @@
           <div class="order-3 max-sm:order-2">
             <div class="text-center text-white text-sm flex flex-col">
               <p class="font-semibold">Genveje</p>
-              <a href="src/underside/rensning-af-stengulve.html">Rensning af stengulve</a>
-              <a href="src/underside/reparation-af-terrazzogulv.html">Reparation af terrazzogulv</a>
-              <a href="src/underside/slibning-af-terrazzogulve-og-stengulve.html">Slibning af terrazzogulve</a>
-              <a href="src/underside/afkalkning-af-badeværelse.html">Afkalkning af badeværelse</a>
-              <a href="src/underside/rengøring-af-vinyl-og-linoleumsgulv.html">Rengøring af linoleum og vinylgulve</a>
-              <a href="src/terrazzogulve.html">Terrazzogulve</a>
-              <a href="src/underside/skridsikring-af-stengulve.html">Skridsikring af gulve</a>
-              <a href="src/underside/bordplader.html">Bordplader</a>
+              <a href="rensning-af-stengulve.html">Rensning af stengulve</a>
+              <a href="reparation-af-terrazzogulv.html">Reparation af terrazzogulv</a>
+              <a href="slibning-af-terrazzogulve-og-stengulve.html">Slibning af terrazzogulve</a>
+              <a href="afkalkning-af-badeværelse.html">Afkalkning af badeværelse</a>
+              <a href="rengøring-af-vinyl-og-linoleumsgulv.html">Rengøring af linoleum og vinylgulve</a>
+              <a href="terrazzogulve.html">Terrazzogulve</a>
+              <a href="skridsikring-af-stengulve.html">Skridsikring af gulve</a>
+              <a href="bordplader.html">Bordplader</a>
             </div>
           </div>
         </footer>

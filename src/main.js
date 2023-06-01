@@ -33,6 +33,58 @@ function toggleAnswer(questionNumber) {
 }
 
 
+  const swiper = new Swiper('.swiper', {
+    // Default parameters
+    slidesPerView: 4,
+    spaceBetween: 4,
+    navigation: {
+      nextEl: '.swiper-button-next', // Next button selector
+      prevEl: '.swiper-button-prev', // Previous button selector
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 4
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 4
+      },
+      // when window width is < 640px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 4
+      }
+    }
+  });
+
+  const swiper1 = new Swiper('.swiper-container', {
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '#next-terrazzo', // Next button selector
+      prevEl: '#prev-terrazzo', // Previous button selector
+    },
+    // Responsive breakpoints
+    breakpoints: {
+
+      // when window width is < 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 3,
+      },
+    },
+  });
+  
+
 
 
 
