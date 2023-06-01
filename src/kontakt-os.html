@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/public/output.css" rel="stylesheet">
+  <!--Animation-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <!--Header-->
+  <header class="flex justify-between bg-dtBlue max-md:py-3 py-5 px-3 border-b border-dtOrange">
+      <img src="../img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
+      <div class="flex items-center justify-center max-sm:hidden">
+        <a href="https://www.instagram.com/dansk_terrazzo/">
+          <img  src="../img/icons/instagram_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
+        </a>
+        <a href="https://www.facebook.com/danskterrazzo">
+          <img src="../img/icons/facebook_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
+        </a>
+        <div class="flex lg:flex-row max-md:flex-col lg:gap-0 max-md:gap-2">
+          <div class="flex flex-row items-center">
+            <a href="mailto:henrik@danskterrazzo.dk">
+              <img src="../img/icons/mail_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
+           </a>
+            <a href="mailto:henrik@danskterrazzo.dk" class="text-white text-xl lg:text-2xl max-md:text-base font-semibold mx-2">Henrik@danskterrazzo.dk</a>
+          </div>
+          <div class="flex flex-row items-center">
+            <a href="tel:+4528832871">
+              <img src="../img/icons/phone_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
+            </a>
+             <a href="tel:+4528832871" class="text-white text-xl lg:text-2xl max-md:text-base font-semibold mx-2">28 83 28 71</a>
+          </div>
+        </div>
+      </div>
+          <button class="sm:hidden" onclick="toggleResponsiveMenu()">
+            <img src="../img/icons/burgermenu.svg" alt="menu icon">
+          </button>
+  </header>
+<!--Responsive nav-->
+  <nav>
+    <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
+      <ul class="flex flex-row max-sm:flex-col">
+        <li class="items-center flex max-sm:justify-center">
+          <a href="index.html" class="text-dtOrange text-lg max-sm:text-2xl max-sm:my-3 mx-3 underline underline-offset-4 decoration-dtOrange decoration-4">Forside</a>
+        </li>
+        <li class="items-center flex justify-center">
+          <a href="terrazzogulve.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4" >
+            Terrazzogulve
+          </a>
+        </li>
+        <li class="flex items-center justify-center gap-0">
+          <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Vi tilbyder</a>
+          <button onclick="toggledropdownMenu()" id="dropdownButton">
+            <img src="../img/icons/arrow.svg" alt="arrow down icon" >
+          </button>
+        </li>
+        <li class="items-center flex justify-center">
+          <a href="om-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Om os</a>
+        </li>
+        <li class="items-center flex justify-center">
+          <a href="kontakt-os.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 mx-3 hover:underline underline-offset-4 decoration-dtOrange decoration-4">Kontakt os</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
+        <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
+          <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
+          <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
+        </button>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/reparation-af-terrazzogulv.html" class="text-white text-xs max-sm:text-lg text-center max-md hover:text-dtOrange max-md:leading-tight">Reparation af terrazzogulv</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/slibning-af-terrazzogulve-og-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Slibning af terrazzogulve</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/rengøring-af-vinyl-og-linoleumsgulv.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rengøring af linoleum og vinylgulve</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/skridsikring-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Skridsikring af gulve</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/afkalkning-af-badeværelse.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Afkalkning af badeværelse</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/rensning-af-stengulve.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Rensning af stengulve</a>
+        </li>
+        <li class="justify-center flex items-center py-2">
+          <a href="../src/underside/bordplader.html" class="text-white text-xs max-sm:text-lg text-center hover:text-dtOrange max-md:leading-3">Bordplader</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+  <main class="relative">
+    <div>
+      <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] max-lg:h-[60vh] max-xl:h-[60vh] h-full" src="../img/Background_img.png" alt="Dansk terrazzo background">
+      <div class="absolute inset-0 flex flex-row justify-center items-center gap-28 max-lg:gap-8 max-md:gap-3">
+        <div class="flex flex-col text-white">
+            <h1 class="font-bold text-6xl max-lg:text-2xl max-md:text-3xl leading-tight max-md:w-4/5 max-sm:text-center max-sm:text-6xl max-sm:w-full text-dtOrange">
+                Kontakt os
+              </h1>
+              <h2 class="font-bold text-2xl max-lg:text-xl max-md:text-base max-sm:text-center max-sm:pt-4">Administration:</h2>
+              <p class="pb-10 max-lg:pb-3 max-sm:text-center">
+                Midtager 26A, 1. th.<br>
+                2605 Brøndby<br>
+              </p>
+              <h2 class="font-bold  text-2xl max-lg:text-xl max-md:text-base max-sm:text-center">
+                Værksted:
+                </h2>
+              <p class="pb-10 max-lg:pb-3 max-sm:text-center">
+                Midtager 26B, st. tv.<br>
+                2605 Brøndby<br>
+              </p>
+              <div class="flex flex-row gap-10 pb-5 max-sm:justify-center">
+                <div class="flex flex-col">
+                    <h2 class="uppercase text-2xl max-lg:text-xl max-md:text-base font-bold">cvr:</h2>
+                    <p>
+                        40747915
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="uppercase text-2xl max-lg:text-xl max-md:text-base font-bold">TLF. nr.:</h2>
+                    <p>
+                        28 83 28 71
+                    </p>
+                </div>
+              </div>
+              <h2 class="font-bold max-lg:text-xl text-2xl max-md:text-base max-sm:text-center">
+                E-mail:
+                </h2>
+              <p class="pb-10 max-lg:pb-3 max-sm:text-center">
+                henrik@danskterrazzo.dk 
+              </p>
+              
+              <div class="flex flex-row gap-5 max-md:gap-2 max-sm:justify-center max-sm:pt-20">
+                <button class="bg-dtBrown px-8 py-3 max-lg:px-4 max-md:px-3.5 max-md:text-xs rounded-full text-dtBlue hover:scale-110 transition-transform">
+                    <a href="">Hvem er vi?</a>
+                </button>
+                <button class="bg-dtLightGray px-8 py-3 max-lg:px-4 max-md:px-3.5 max-md:text-xs rounded-full text-dtBlue hover:scale-110 transition-transform">
+                    <a href="">Send en mail</a>
+                </button>
+              </div>
+        </div>
+        
+        <!--FAQ-->
+        <div class="max-sm:hidden">
+            <div class="max-w-3xl  mx-auto bg-dtLightGray p-11 max-lg:p-3 rounded-xl">
+                <h2 class="text-5xl font-bold mb-4 text-dtBrown max-lg:text-2xl">FAQ - ofte stillet spørgsmål</h2>
+              
+                <div class="border-t border-gray-300">
+                  <!-- Question 1 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(1)">
+                      <span class="text-lg font-semibold">1. Har vi andre services end gulve og badeværelser?</span>
+                      <span id="arrow1" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer1" class="text-gray-600 hidden">
+                      <p>Yes, besides floors and bathrooms, we offer a range of other services such as terrazzo countertops, stairs, walls, and custom terrazzo designs. Contact us for more information.</p>
+                    </div>
+                  </div>
+              
+                  <!-- Question 2 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(2)">
+                      <span class="text-lg font-semibold">2. Hvor mange års erfaring har Dansk Terrazzo?</span>
+                      <span id="arrow2" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer2"  class="text-gray-600 hidden">
+                      <p>Dansk Terrazzo has over 10 years of experience in the industry. Our team consists of skilled professionals dedicated to delivering high-quality terrazzo services.</p>
+                    </div>
+                  </div>
+              
+                  <!-- Question 3 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(3)">
+                      <span class="text-lg font-semibold">3. Hvor kan man finde os?</span>
+                      <span id="arrow3" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer3" class="text-gray-600 hidden">
+                      <p>You can find us at the following address: [Address], [City], [Country]. Feel free to visit our location or contact us for any inquiries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!--Mobile FAQ-->
+    <section>
+        <div class="sm:hidden py-4">
+            <div class="max-w-[31rem] mx-auto bg-dtLightGray p-11 max-lg:p-3 rounded-xl">
+                <h2 class="text-4xl font-bold mb-4 text-dtBrown max-sm:text-center">FAQ - ofte stillet spørgsmål</h2>
+              
+                <div class="border-t border-gray-300">
+                  <!-- Question 1 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(4)">
+                      <span class="text-lg font-semibold">1. Har vi andre services end gulve og badeværelser?</span>
+                      <span id="arrow4" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer4" class="text-gray-600 hidden">
+                      <p>Yes, besides floors and bathrooms, we offer a range of other services such as terrazzo countertops, stairs, walls, and custom terrazzo designs. Contact us for more information.</p>
+                    </div>
+                  </div>
+              
+                  <!-- Question 2 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(5)">
+                      <span class="text-lg font-semibold">2. Hvor mange års erfaring har Dansk Terrazzo?</span>
+                      <span id="arrow5" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer5"  class="text-gray-600 hidden">
+                      <p>Dansk Terrazzo has over 10 years of experience in the industry. Our team consists of skilled professionals dedicated to delivering high-quality terrazzo services.</p>
+                    </div>
+                  </div>
+              
+                  <!-- Question 3 -->
+                  <div class="py-4">
+                    <button class="flex items-center justify-between w-full focus:outline-none" onclick="toggleAnswer(6)">
+                      <span class="text-lg font-semibold">3. Hvor kan man finde os?</span>
+                      <span id="arrow6" class="ml-2 text-gray-500">
+                        <img src="../img/icons/arrow-black.svg"  alt="Pil" class="rotate-180">
+                      </span>
+                    </button>
+                    <div id="answer6" class="text-gray-600 hidden">
+                      <p>You can find us at the following address: [Address], [City], [Country]. Feel free to visit our location or contact us for any inquiries.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+     <!--Contact Form fra tidligere projekt vi lavede i 3.semester med greenlead-->
+     <div class="bg-dtLightGray">
+        <div class="flex flex-row max-sm:flex-col gap-10 p-10">
+            <div class="flex flex-col max-md:w-[175vw] max-sm:w-fit max-sm:text-center">
+                <h2 class="text-dtBrown text-5xl pb-5 max-md:text-3xl max-sm:text-5xl">
+                    Kontakt os direkte
+                </h2>
+                <p class="max-lg:text-sm max-sm:mx-auto">
+                    Har du spørgsmål, behov for mere information eller ønsker du at indhente et uforpligtende tilbud fra Dansk Terrazzo? Du er mere end velkommen til at kontakte os ved hjælp af vores praktiske kontaktformular her på hjemmesiden.
+Uanset om du er privatperson, virksomhed eller ejendomsforening, står vores dedikerede team klar til at besvare dine henvendelser og finde den bedste løsning til dit linoleum- eller vinylgulv.
+                </p>
+                <img src="../img/bil-nobg.png" alt="" width="500" class="max-md:w-full max-sm:w-full max-sm:mx-auto">
+            </div>
+            <div id="contact-form" class="w-[225vw] max-sm:w-full">
+                <form id="contact-form" action="https://formsubmit.co/" method="POST">  
+                  <!-- Navn -->
+                    <input name="name" for="name" type="name" class="placeholder-black rounded-lg block w-full p-2.5 my-4 focus:bg-white bg-dtOrange" id="inputName" placeholder="Navn" required>
+              
+                    <div class="flex flex-row gap-5 mb-4">
+                        <!-- E-mail -->
+                        <input name="email" for="email" type="email" class="placeholder-black rounded-lg block w-full p-2.5 focus:bg-white bg-dtOrange" id="inputEmail" placeholder="E-mail" required>
+                        
+                        <!-- Telefon -->
+                        <input name="phone" for="phone" type="phone" class="placeholder-black rounded-lg block w-full p-2.5 focus:bg-white bg-dtOrange" id="inputPhone" placeholder="Telefon" required>  
+                    </div>
+              
+                  <!-- Emne -->
+                    <input name="subject_message" for="subject_message" type="subject" class="placeholder-black rounded-lg block w-full p-2.5 focus:bg-white bg-dtOrange mb-4" id="inputSubject" placeholder="Emne" required>
+              
+                  <!-- Besked -->
+                  <div class="form-group">
+                    <textarea name="message" for="message" type="message" class="placeholder-black rounded-lg block w-full p-2.5 focus:bg-white bg-dtOrange mb-4 h-[25vh]" id="inputText" placeholder="Din besked" required></textarea>
+                  </div>
+                  <div class="flex justify-center">
+                    <button type="submit" id="myBtn" class="bg-dtBrown text-white px-10 py-3 mx-auto rounded-full hover:bg-dtOrange hover:scale-110 transition-transform">Send besked</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+     </div>
+
+     <section id="find-os">
+        <!--Google map embed fra deres side-->
+        <div class="flex justify-center flex-col">
+            <h3 class="text-dtBrown text-5xl py-10 mx-auto">Find os her</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.520235240145!2d12.386360076712512!3d55.64516000027709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d53f01ac67c4871%3A0x602c3fb3fdf26179!2sDansk%20Terrazzo%20ApS!5e0!3m2!1sda!2sdk!4v1685592839460!5m2!1sda!2sdk" class="w-full h-[60vh]" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
+    
+    <!--Footer-->
+
+        <footer class="bg-dtBlue p-8">
+          <div class="flex flex-row max-sm:flex-col max-sm:gap-5 justify-around items-center">
+  
+            <div class="order-1 max-sm:order-3">
+              <img src="../img/dt-whitelogo.svg" alt="Dansk terrazzo logo">
+              <div class="flex flex-row gap-3 pt-2 max-md:text-base"> 
+                <div class="flex-col">
+                  <p class="text-white text-1xl font-bold">
+                    Administration:
+                    <p class="text-white text-1xl" >
+                    Midtager 26A, 1. th.<br>
+                    2605 Brøndby</p>
+                </div>
+  
+                <div class="flex-col">
+                  <p class="text-white text-1xl font-bold">
+                    Værksted:
+                    <p class="text-white text-1xl">
+                    Midtager 26B, st. tv.<br>
+                    2605 Brøndby</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="order-2 max-sm:order-1">
+            <p class="text-white text-center">
+              CVR: 40747915<br>
+              Telefon.: 2883 2871<br>
+              Mail: henrik@danskterrazzo.dk<br>
+            </p>
+          </div>
+
+          <div class="order-3 max-sm:order-2">
+            <div class="text-center text-white text-sm flex flex-col">
+              <p class="font-semibold">Genveje</p>
+              <a href="rensning-af-stengulve.html">Rensning af stengulve</a>
+              <a href="reparation-af-terrazzogulv.html">Reparation af terrazzogulv</a>
+              <a href="slibning-af-terrazzogulve-og-stengulve.html">Slibning af terrazzogulve</a>
+              <a href="afkalkning-af-badeværelse.html">Afkalkning af badeværelse</a>
+              <a href="rengøring-af-vinyl-og-linoleumsgulv.html">Rengøring af linoleum og vinylgulve</a>
+              <a href="terrazzogulve.html">Terrazzogulve</a>
+              <a href="skridsikring-af-stengulve.html">Skridsikring af gulve</a>
+              <a href="bordplader.html">Bordplader</a>
+            </div>
+          </div>
+        </footer>
+
+    <!--scripts-->
+    <script src="main.js"></script>
+</body>
+</html>

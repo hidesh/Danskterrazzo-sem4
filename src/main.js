@@ -23,5 +23,16 @@ function toggleResponsiveMenu() {
     navbar.classList.add('animate__slideInRight');
 }
 
+// onclick method for FAQ
+function toggleAnswer(questionNumber) {
+  const answer = document.getElementById(`answer${questionNumber}`);
+  const arrow = document.getElementById(`arrow${questionNumber}`);
+
+  answer.classList.toggle('hidden');
+  arrow.classList.toggle('transform');
+}
+
+
+
 
 
