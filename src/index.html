@@ -1,10 +1,15 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/public/output.css" rel="stylesheet">
-
+  <title>Velkommen - Dansk Terrazzo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  
   <!--Google - Font-->
   <!--Raleway-->
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -23,35 +28,37 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <!--Header-->
-  <header class="flex justify-between bg-dtBlue max-md:py-3 py-5 px-3 border-b border-dtOrange">
-      <img src="../img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
-      <div class="flex items-center justify-center max-sm:hidden">
-        <a href="https://www.instagram.com/dansk_terrazzo/">
-          <img  src="../img/icons/instagram_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
+    <!--Header-->
+    <header class="flex justify-between bg-dtBlue max-md:py-3 py-5 px-3 border-b border-dtOrange">
+      <a href="index.html">
+          <img src="img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
         </a>
-        <a href="https://www.facebook.com/danskterrazzo">
-          <img src="../img/icons/facebook_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
-        </a>
-        <div class="flex lg:flex-row max-md:flex-col lg:gap-0 max-md:gap-2">
-          <div class="flex flex-row items-center">
-            <a href="mailto:henrik@danskterrazzo.dk">
-              <img src="../img/icons/mail_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
-           </a>
-            <a href="mailto:henrik@danskterrazzo.dk" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">Henrik@danskterrazzo.dk</a>
-          </div>
-          <div class="flex flex-row items-center">
-            <a href="tel:+4528832871">
-              <img src="../img/icons/phone_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
-            </a>
-             <a href="tel:+4528832871" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">28 83 28 71</a>
+        <div class="flex items-center justify-center max-sm:hidden">
+          <a href="https://www.instagram.com/dansk_terrazzo/">
+            <img  src="img/icons/instagram_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="instagram logo">
+          </a>
+          <a href="https://www.facebook.com/danskterrazzo">
+            <img src="img/icons/facebook_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="facebook logo">
+          </a>
+          <div class="flex lg:flex-row max-md:flex-col lg:gap-0 max-md:gap-2">
+            <div class="flex flex-row items-center">
+              <a href="mailto:henrik@danskterrazzo.dk">
+                <img src="img/icons/mail_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="E-mail logo">
+             </a>
+              <a href="mailto:henrik@danskterrazzo.dk" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">Henrik@danskterrazzo.dk</a>
+            </div>
+            <div class="flex flex-row items-center">
+              <a href="tel:+4528832871">
+                <img src="img/icons/phone_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="Telefon logo">
+              </a>
+               <a href="tel:+4528832871" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">28 83 28 71</a>
+            </div>
           </div>
         </div>
-      </div>
-          <button class="sm:hidden" onclick="toggleResponsiveMenu()">
-            <img src="../img/icons/burgermenu.svg" alt="menu icon">
-          </button>
-  </header>
+            <button class="sm:hidden" onclick="toggleResponsiveMenu()">
+              <img src="img/icons/burgermenu.svg" alt="menu icon">
+            </button>
+    </header>
 <!--Responsive nav-->
   <nav>
     <div id="navbar" class="flex max-sm:hidden items-center bg-dtBlue max-sm:justify-center justify-end border-b border-dtOrange py-3 animate__animated">
@@ -67,7 +74,7 @@
         <li class="flex items-center justify-center gap-0">
           <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4 font-poppins font-medium">Vi tilbyder</a>
           <button onclick="toggledropdownMenu()" id="dropdownButton">
-            <img src="../img/icons/arrow.svg" alt="arrow down icon" >
+            <img src="img/icons/arrow.svg" alt="arrow down icon" >
           </button>
         </li>
         <li class="items-center flex justify-center">
@@ -81,7 +88,7 @@
     <div>
       <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
         <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
-          <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
+          <img src="img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
           <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
         </button>
         <li class="justify-center flex items-center py-2">
@@ -110,7 +117,7 @@
   </nav>
     
   <main class="relative">
-    <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] max-h-full" src="../img/Background_img.png" alt="Dansk terrazzo background">
+    <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] max-h-full" src="img/Background_img.png" alt="Dansk terrazzo background">
     <div class="absolute top-1/2 left-0 max-lg:pl-14 pl-28 max-md:pl-14 transform -translate-y-1/2 max-w-2xl max-lg:max-w-sm">
       <div class="flex flex-col w-full max-w-3xl max-md:ml-4 animate__animated animate__backInLeft">
         <h1 class="text-dtOrange text-6xl max-lg:text-4xl max-md:text-3xl leading-tight max-md:w-4/5 font-raleway font-semibold">
@@ -120,10 +127,10 @@
           <br>
           Vores erfarne team står klar til at levere enestående kvalitet og skabe et unikt udtryk til dit rum."</p>
         <div class="flex flex-row gap-5">
-          <button class="bg-dtOrange px-16 py-3 max-md:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform font-lato font-semibold">
+          <button class="bg-dtOrange px-16 py-3 max-lg:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform font-lato font-medium">
             <a href="" class="text-dtBlue max-md:text-base">Kontakt os</a>
           </button>
-          <button class="bg-dtBlue px-16 py-3 max-lg:px-6 max-lg:py-2 rounded-full hover:scale-110 transition-transform font-lato font-semibold">
+          <button class="bg-dtBlue px-16 py-3 max-lg:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform font-lato font-medium">
             <a href="" class="text-dtGray max-md:text-base">Services</a>
           </button>
         </div>
@@ -139,25 +146,25 @@
         <div class="swiper-wrapper max-md:gap-1 max-sm:gap-0 gap-3">
           <!-- Carousel items -->
           <div class="swiper-slide">
-            <img src="../img/services-img/Ny-terrazzo-Slider.png" alt="nylavet terrazzogulv" class="hover:scale-105 transition-transform swiper-slide">
+            <img src="img/services-img/Ny-terrazzo-Slider.png" alt="nylavet terrazzogulv" class="hover:scale-105 transition-transform swiper-slide">
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/Reparation-af-terrazzogulve-slider.png" alt="reparation af terrazzogulv" class="hover:scale-105 transition-transform swiper-slide">
+            <img src="img/services-img/Reparation-af-terrazzogulve-slider.png" alt="reparation af terrazzogulv" class="hover:scale-105 transition-transform swiper-slide">
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/Slibning-af-terrazzogulve-slider.png" alt="slibning af terrazzogulv før og efter" class="hover:scale-105 transition-transform swiper-slide">
+            <img src="img/services-img/Slibning-af-terrazzogulve-slider.png" alt="slibning af terrazzogulv før og efter" class="hover:scale-105 transition-transform swiper-slide">
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/Dybderensning-hårde-gulv-slider.png" alt="Dybderensning hårde gulv slider før og efter" class="hover:scale-105 transition-transform swiper-slide">
+            <img src="img/services-img/Dybderensning-hårde-gulv-slider.png" alt="Dybderensning hårde gulv slider før og efter" class="hover:scale-105 transition-transform swiper-slide">
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/Dybderensning af vinyl- og linoleumsgulv - slider.png" alt="Dybderensning af vinyl- og linoleumsgulv før og efter" class="hover:scale-105 transition-transform swiper-slide">  
+            <img src="img/services-img/Dybderensning af vinyl- og linoleumsgulv - slider.png" alt="Dybderensning af vinyl- og linoleumsgulv før og efter" class="hover:scale-105 transition-transform swiper-slide">  
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/Afkalkning af badeværelse - slider.png" alt="afkalkning af badeværelse før og efter" class="swiperhover:scale-105 transition-transform swiper-slide">        
+            <img src="img/services-img/Afkalkning af badeværelse - slider.png" alt="afkalkning af badeværelse før og efter" class="swiperhover:scale-105 transition-transform swiper-slide">        
           </div>
           <div class="swiper-slide">
-            <img src="../img/services-img/bordplader - slider.png" alt="bordplader" class="hover:scale-105 transition-transform swiper-slide">
+            <img src="img/services-img/bordplader - slider.png" alt="bordplader" class="hover:scale-105 transition-transform swiper-slide">
           </div>
         </div>
         <div class="swiper-button-next shadow-2xl"></div>
@@ -172,7 +179,7 @@
         Et af Danmarks mest erfarne terrazzo virksomhed
       </h1>
       <div class="flex flex-row max-md:flex-col items-center">
-        <img src="../img/bil-nobg.png" alt="terrazzo" class="w-1/2 h-full max-md:w-full items-center">
+        <img src="img/bil-nobg.png" alt="terrazzo bil" class="w-1/2 h-full max-md:w-full items-center">
         <div class="bg-dtBrown rounded-md m-3 flex items-center">
           <div class="my-auto max-md:my-8 items-center">
             <p class="text-center text-white px-20 pt-5 text-2xl pb-5 max-md:py-3 max-lg:text-lg font-poppins font-normal">
@@ -197,8 +204,8 @@
         Se vores anmeldelsessektion for at læse, hvad vores glade kunder siger om vores terrazzo-tjenester. Deres ærlige anmeldelser styrker vores engagement i at levere enestående kvalitet og tilfredsstillelse.
       </p>
       <div class="flex flex-col justify-center items-center">
-        <img src="../img/trustpilot-logo.svg" alt="trustpilot logo" class="pt-3" />
-        <img src="../img/trustpilot-rating.svg" alt="trustpilot rating" />
+        <img src="img/trustpilot-logo.svg" alt="trustpilot logo" class="pt-3" />
+        <img src="img/trustpilot-rating.svg" alt="trustpilot rating" />
       </div>
 
       
@@ -299,7 +306,7 @@
           <div class="flex flex-row max-sm:flex-col max-sm:gap-5 justify-around items-center">
   
             <div class="order-1 max-sm:order-3">
-              <img src="../img/dt-whitelogo.svg" alt="Dansk terrazzo logo">
+              <img src="img/dt-whitelogo.svg" alt="Dansk terrazzo logo">
               <div class="flex flex-row gap-3 pt-2 max-md:text-base"> 
                 <div class="flex-col">
                   <p class="text-white text-1xl font-bold font-lato">

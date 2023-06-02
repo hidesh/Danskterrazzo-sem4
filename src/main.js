@@ -15,12 +15,12 @@ function toggledropdownMenu() {
 
 function toggleResponsiveMenu() {
   navbar.classList.toggle('max-sm:hidden');
-  navbar.classList.toggle('absolute');
-  navbar.classList.toggle('inset-x-0');
-  navbar.classList.toggle('z-10');
+  navbar.classList.toggle('absolute'); // 0px from top
+  navbar.classList.toggle('inset-x-0'); // 0px from left and right
+  navbar.classList.toggle('z-10'); //
   
 
-    navbar.classList.add('animate__slideInRight');
+    navbar.classList.add('animate__slideInRight'); //animation from animate.css
 }
 
 // onclick method for FAQ
@@ -32,7 +32,7 @@ function toggleAnswer(questionNumber) {
   arrow.classList.toggle('transform');
 }
 
-
+//fra swiper med lavet til vores egne præferencer
   const swiper = new Swiper('.swiper', {
     // Default parameters
     slidesPerView: 4,

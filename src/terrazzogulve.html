@@ -1,9 +1,14 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/public/output.css" rel="stylesheet">
+  <title>Terrazzogulve - Dansk Terrazzo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 
   <!--Google - Font-->
   <!--Raleway-->
@@ -41,31 +46,33 @@
 
   <!--Header-->
   <header class="flex justify-between bg-dtBlue max-md:py-3 py-5 px-3 border-b border-dtOrange">
-      <img src="../img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
+    <a href="index.html">
+        <img src="img/dt-whitelogo.svg" alt="dansk Terrazzo logo" class="lg:w-60 max-md:w-48">
+      </a>
       <div class="flex items-center justify-center max-sm:hidden">
         <a href="https://www.instagram.com/dansk_terrazzo/">
-          <img  src="../img/icons/instagram_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
+          <img  src="img/icons/instagram_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="instagram logo">
         </a>
         <a href="https://www.facebook.com/danskterrazzo">
-          <img src="../img/icons/facebook_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="">
+          <img src="img/icons/facebook_icon.svg" class="mx-2 lg:w-16 lg:h-16 max-md:w-12 max-md:h-12" alt="facebook logo">
         </a>
         <div class="flex lg:flex-row max-md:flex-col lg:gap-0 max-md:gap-2">
           <div class="flex flex-row items-center">
             <a href="mailto:henrik@danskterrazzo.dk">
-              <img src="../img/icons/mail_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
+              <img src="img/icons/mail_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="E-mail logo">
            </a>
-            <a href="mailto:henrik@danskterrazzo.dk" class="text-white lg:text-2xl max-md:text-base font-medium mx-2 font-lato">Henrik@danskterrazzo.dk</a>
+            <a href="mailto:henrik@danskterrazzo.dk" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">Henrik@danskterrazzo.dk</a>
           </div>
           <div class="flex flex-row items-center">
             <a href="tel:+4528832871">
-              <img src="../img/icons/phone_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="">
+              <img src="img/icons/phone_icon.svg" class="ml-2 lg:w-16 max-md:w-10 lg:h-16 max-md:h-10" alt="Telefon logo">
             </a>
-             <a href="tel:+4528832871" class="text-white lg:text-2xl max-md:text-base font-medium mx-2 font-lato">28 83 28 71</a>
+             <a href="tel:+4528832871" class="text-white lg:text-2xl max-md:text-base mx-2 font-lato font-medium">28 83 28 71</a>
           </div>
         </div>
       </div>
           <button class="sm:hidden" onclick="toggleResponsiveMenu()">
-            <img src="../img/icons/burgermenu.svg" alt="menu icon">
+            <img src="img/icons/burgermenu.svg" alt="menu icon">
           </button>
   </header>
 <!--Responsive nav-->
@@ -83,7 +90,7 @@
       <li class="flex items-center justify-center gap-0">
         <a href="vi-tilbyder.html" class="text-white text-lg max-sm:text-2xl max-sm:my-3 ml-3 mr-0 hover:underline underline-offset-4 decoration-dtOrange decoration-4 font-poppins font-medium">Vi tilbyder</a>
         <button onclick="toggledropdownMenu()" id="dropdownButton">
-          <img src="../img/icons/arrow.svg" alt="arrow down icon" >
+          <img src="img/icons/arrow.svg" alt="arrow down icon" >
         </button>
       </li>
       <li class="items-center flex justify-center">
@@ -97,7 +104,7 @@
   <div>
     <ul id="dropdownMenu" class="absolute inset-x-0 flex flex-row max-md:flex-col lg:justify-end bg-dtBlue border-b border-dtOrange max-sm:py-4 py-3 max-md:py-0 max-lg:gap-0 gap-7 z-10 px-2 hidden">
       <button id="backButtonForDDMenu" class="sm:hidden hidden flex flex-row justify-center" onclick="toggledropdownMenu()">
-        <img src="../img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
+        <img src="img/icons/arrow.svg" alt="arrow down icon" class="-rotate-90">
         <a class="text-dtOrange max-sm:text-lg font-extrabold items-center">Tilbage</a>
       </button>
       <li class="justify-center flex items-center py-2">
@@ -126,7 +133,7 @@
 </nav>
     
   <main class="relative">
-    <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] h-full" src="../img/Background_img.png" alt="Dansk terrazzo background">
+    <img class="max-w-full brightness-90 max-sm:object-cover max-sm:h-[80vh] h-full" src="img/Background_img.png" alt="Dansk terrazzo background">
     <div class="absolute top-1/2 left-0 max-lg:pl-14 pl-28 max-md:pl-14 transform -translate-y-1/2 max-w-2xl max-lg:max-w-sm">
       <div class="flex flex-col w-full max-w-3xl max-md:ml-4 animate__animated animate__backInLeft">
         <h1 class="text-bold text-dtOrange text-6xl max-lg:text-4xl max-md:text-3xl leading-tight max-md:w-4/5 font-raleway font-semibold">
@@ -134,7 +141,7 @@
         </h1>
         <p class="pt-9 max-lg:pt-6 max-md:pt-4 pr-10 pb-4 text-white max-lg:text-base max-md:text-sm text-lg text-left font font-medium">"Vi har mere end 30 års erfaring med alle former, farver og størrelser inden for terrazzogulve og kan dermed tilbyde professionel rådgivning uanset opgavetype."</p>
         <div class="flex flex-row gap-5">
-          <button class="bg-dtOrange px-16 py-3 max-md:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform font-lato font-medium">
+          <button class="bg-dtOrange px-16 py-3 max-lg:px-6 max-md:py-2 rounded-full hover:scale-110 transition-transform font-lato font-medium">
             <a href="" class="text-dtBlue max-md:text-base">Kontakt os</a>
           </button>
           <button class="bg-dtBlue px-16 py-3 max-lg:px-6 max-lg:py-2 rounded-full hover:scale-110 transition-transform font-lato font-medium">
@@ -148,7 +155,7 @@
    
       <section id="Terrazzogulve-info">
         <div class="m-12 flex flex-row max-md:flex-col gap-5 md:gap-9 lg:gap-32">
-            <img src="/img/terrazzogulve.png" alt="terrazzogulv" class="drop-shadow-img max-sm:w-full max-lg:w-1/2 mx-auto"/>
+            <img src="img/terrazzogulve.png" alt="terrazzogulv" class="drop-shadow-img max-sm:w-full max-lg:w-1/2 mx-auto"/>
             <div class="mr-28 max-sm:mr-0">
                 <h2 class="max-lg:text-3xl text-5xl font-semibold lg:mr-48 pb-6 max-md:pb-3">Klarer det hele inden for terrazzogulve</h2>
                 <p class="pb-10 max-md:pb-2 max-md:text-xs">
@@ -176,43 +183,42 @@
             </div>
         </div>
     </section>
-
+<!--Swiper-->
     <section id="galleri-terrazzogulv" class="w-full bg-dtBlue drop-shadow-2xl pt-14 pb-14 border-b border-dtOrange hidden">
       <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="../img/terrazzo-gulv-img/floor-1.png" alt="">
+              <img src="img/terrazzo-gulv-img/floor-1.png" alt="Terrazzogulve hos Dansk Terrazzo">
               <h4 class="text-center text-2xl text-white py-4">Terrazzogulve hos Dansk Terrazzo</h4>
               <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="../img/terrazzo-gulv-img/rep1.png" alt="">
+              <img src="img/terrazzo-gulv-img/rep1.png" alt="Reparation af terrazzogulv">
               <h4 class="text-center text-2xl text-white py-4">Reparation af terrazzogulv</h4>
               <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="../img/terrazzo-gulv-img/rep2.png" alt="">
+              <img src="img/terrazzo-gulv-img/rep2.png" alt="Repareret gulv<">
               <h4 class="text-center text-2xl text-white py-4">Repareret gulv</h4>
               <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="../img/terrazzo-gulv-img/bad.png" alt="">
+              <img src="img/terrazzo-gulv-img/bad.png" alt="errazzo til bad">
               <h4 class="text-center text-2xl text-white py-4">Terrazzo til bad</h4>
               <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="flex flex-col">
-              <img src="../img/terrazzo-gulv-img/terrazzogulv2.png" alt="">
+              <img src="img/terrazzo-gulv-img/terrazzogulv2.png" alt="Terrazzogulv">
               <h4 class="text-center text-2xl text-white py-4">Terrazzogulv</h4>
               <p class="text-center text-sm text-white px-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. </p>
             </div>
@@ -231,7 +237,7 @@
     <div class="flex flex-row max-sm:flex-col max-sm:gap-5 justify-around items-center">
 
       <div class="order-1 max-sm:order-3">
-        <img src="../img/dt-whitelogo.svg" alt="Dansk terrazzo logo">
+        <img src="img/dt-whitelogo.svg" alt="Dansk terrazzo logo">
         <div class="flex flex-row gap-3 pt-2 max-md:text-base"> 
           <div class="flex-col">
             <p class="text-white text-1xl font-bold font-lato">
